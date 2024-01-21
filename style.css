@@ -205,6 +205,13 @@ header.scrolled a {
         margin: 0;
         font-size: xx-small;
     }
+
+    #typing-container h1 {
+        text-align: center;
+        font-family: 'Anonymous Pro';
+        font-size: 80px;
+        font-weight: 700;
+    }
 }
 
 @media (max-width: 768px) {
@@ -225,12 +232,27 @@ header.scrolled a {
         margin-top: 1rem;
         padding: 25px 25px 75px;
     }
+
+    #typing-container h1 {
+        text-align: center;
+        font-family: 'Anonymous Pro';
+        font-size: 65px;
+        font-weight: 700;
+    }
+
 }
 
 @media (max-width: 576px) {
     .dropdown_menu {
         left: 2rem;
         width: unset;
+    }
+
+    #typing-container h1 {
+        text-align: center;
+        font-family: 'Anonymous Pro';
+        font-size: 45px;
+        font-weight: 700;
     }
 }
 
@@ -260,7 +282,7 @@ header.scrolled a {
 #typing-container h1 {
     text-align: center;
     font-family: 'Anonymous Pro';
-    font-size: 65px;
+    /* font-size: 80px; */
     font-weight: 700;
 }
 
