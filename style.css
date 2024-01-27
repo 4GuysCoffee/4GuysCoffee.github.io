@@ -279,6 +279,7 @@ span {
     .dropdown_menu {
         left: 2rem;
         width: unset;
+        padding: 0.13px;
     }
 
     #typing-container h1 {
