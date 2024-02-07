@@ -225,7 +225,7 @@ span {
 
     /* APPLYING MEDIA QUERIES */
 
-@media (max-width: 996px) {
+@media (min-width: 920px) {
     div#blog, div#project, div#photos {
         padding: 1.5rem 25px;
         text-align: justify;
@@ -247,7 +247,7 @@ span {
     }
 }
 
-@media (max-width: 816px) {
+@media (max-width: 920px) {
     .navbar .links,
     .navbar .action_btn {
         display: none;
