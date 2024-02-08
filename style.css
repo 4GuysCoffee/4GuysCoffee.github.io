@@ -600,7 +600,7 @@ span {
 
     /* APPLYING MEDIA QUERIES */
 
-@media (min-width: 920px) {
+/* @media (min-width: 920px) {
     div#blog, div#project, div#photos {
         padding: 1.5rem 25px;
         text-align: justify;
@@ -609,9 +609,9 @@ span {
         padding-top: 2rem;
     }
 
-    div#socialLinks, #socialLinks a:link, #socialLinks a:visited, #socialLinks a:hover {
+    div#socialLinks, #socialLinks a:link, #socialLinks a:visited, #socialLinks a:hover { */
         /* margin: 0; */
-        font-size: xx-small;
+        /* font-size: xx-small;
     }
 
     #typing-container h1 {
@@ -620,7 +620,7 @@ span {
         font-size: 80px;
         font-weight: 700;
     }
-}
+} */
 
 @media (max-width: 920px) {
     .navbar .links,
@@ -651,6 +651,7 @@ span {
 }
 
 @media (max-width: 576px) {
+
     .dropdown_menu {
         left: 2rem;
         width: unset;
@@ -692,9 +693,9 @@ span {
 }
 
 /* BLOG PAGE */
-#blog, #project, #photos {
+/* #blog, #project, #photos {
     padding: 1.5rem 7rem;
-}
+} */
 
 #blog .blogEntry {
     margin-top: 1.5rem;
