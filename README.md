@@ -83,6 +83,7 @@
     <li><a href="#team-members">Team Members</a></li>
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#references">References</a></li>
   </ol>
 </details>
 
@@ -529,6 +530,15 @@ This project would not have been possible without the collective effort, support
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+## References
+
+1. Lau, Deborah. “[The Big Read in Short: What’s Driving Singapore’s Coffee Craze?](https://www.todayonline.com/big-read/)” TODAY, November 4, 2023. big-read-short-whats-driving-singapores-coffee-craze-2297136 
+2. “[Hierarchical Network Design](https://www.geeksforgeeks.org/hierarchical-network-design/).” GeeksforGeeks, November 17, 2022.
+3. [IP addressing guide](https://www.cisco.com/c/dam/global/en_ca/solutions/strategy/docs/sbaBN_IPv4addrG.pdf) - Cisco. Accessed January 14, 2024.
+4. [What is Amazon EC2?](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html) - Amazon Elastic Compute Cloud. Accessed January 14, 2024.
+5. Canadian Centre for Cyber Security, Canadian Centre for Cyber Security (Cyber Centre). “[Practitioner Guidance for Securing Microsoft Active Directory Services in Your Organization](https://www.cyber.gc.ca/en/guidance/practitioner-guidance-securing-microsoft-active-directory-services-your-organization-itsp60100).” ITSP.60.100, December 12, 2023.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
