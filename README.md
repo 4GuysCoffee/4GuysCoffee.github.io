@@ -66,7 +66,7 @@
             <a href="#case-study-1-british-airways-magecart-attack">Case Study 1: British Airways Magecart Attack</a>
               <ul>
                 <li><a href="#how-magecart-attacks-could-affect-4guyscoffee">How Magecart Attacks Could Affect 4GuysCoffee</a></li>
-                <li><a href="#suggested-controls-&-mitigation">Suggested Controls & Mitigation</a></li>
+                <li><a href="#suggested-controls--mitigation">Suggested Controls & Mitigation</a></li>
               </ul>
           </li>
           <li>
