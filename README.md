@@ -26,7 +26,7 @@
         <li>
           <a href="#networking">Networking</a>
           <ul>
-            <li><a href="#distribution-&-core-layer">Distribution & Core Layer</a></li>
+            <li><a href="#distribution--core-layer">Distribution & Core Layer</a></li>
           </ul>
         </li>
         <li>
@@ -54,7 +54,7 @@
     <li>
       <a href="#cybersecurity">Cybersecurity</a>
         <ul>
-          <li><a href="#background-&-scope">Background & Scope</a></li>
+          <li><a href="#background--scope">Background & Scope</a></li>
           <li>
             <a href="#digital-skimming">Digital Skimming</a>
               <ul>
