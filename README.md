@@ -6,7 +6,7 @@
 <br />
 <div align="center">
   <a href="https://www.4guyscoffee.co/" target=”_blank”>
-    <img src="HTDOCS/img/logo.png" alt="logo" style="width: 40%; height: auto;">
+    <img src="HTDOCS/img/logo2.png" alt="logo" style="width: 40%; height: auto;">
   </a>
 </div>
 
