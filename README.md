@@ -34,6 +34,7 @@
   </ol>
 </details>
 
+
 ## Disclaimer
 
 The company mentioned in this document, "4GuysCoffee," is entirely fictitious and has been created for the purpose of this project. Any resemblance to real entities, living or dead, is purely coincidental.
