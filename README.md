@@ -14,78 +14,26 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#disclaimer">Disclaimer</a>
-    </li>
-    <li>
-      <a href="#background">Background</a>
-    </li>
-    <li>
-      <a href="#infrastructures">Infrastructures</a>
-      <ul>
-        <li>
-          <a href="#networking">Networking</a>
-          <ul>
-            <li><a href="#distribution--core-layer">Distribution & Core Layer</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#cloud-operations">Cloud Operations</a>
-          <ul>
-            <li><a href="#aws-cloudtrail">AWS CloudTrail</a></li>
-            <li><a href="#aws-cloudwatch">AWS CloudWatch</a></li>
-            <li><a href="#other-aws-resources">Other AWS Resources</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#server-administration">Server Administration</a>
-          <ul>
-            <li><a href="#importance-of-active-directory">Importance of Active Directory</a></li>
-            <li><a href="#demonstrating-our-active-directory-setup">Demonstration of Active Directory</a></li>
-            <li><a href="#active-directory-installation">Active Directory Installation</a></li>
-            <li><a href="#adding-a-pc-to-the-server">Adding a PC to the Server</a></li>
-            <li><a href="#creating-organizational-units-(OUs)-and-security-groups">Creating Organizational Units (OUs) and Security Groups</a></li>
-            <li><a href="#securing-active-directory">Securing Active Directory</a></li>
-            <li><a href="#linux-server-administration">Linux Server Administration</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#cybersecurity">Cybersecurity</a>
-        <ul>
-          <li><a href="#background--scope">Background & Scope</a></li>
-          <li>
-            <a href="#digital-skimming">Digital Skimming</a>
-              <ul>
-                <li><a href="#impacts-&-consequences">Impacts & Consequences</a></li>
-                <li><a href="#trend-analysis">Trend Analysis</a></li>
-              </ul>
-          </li>
-          <li>
-            <a href="#case-study-1-british-airways-magecart-attack">Case Study 1: British Airways Magecart Attack</a>
-              <ul>
-                <li><a href="#how-magecart-attacks-could-affect-4guyscoffee">How Magecart Attacks Could Affect 4GuysCoffee</a></li>
-                <li><a href="#suggested-controls--mitigation">Suggested Controls & Mitigation</a></li>
-              </ul>
-          </li>
-          <li>
-            <a href="#case-study-2-starbucks-data-breach">Case Study 2: Starbucks Data Breach</a>
-              <ul>
-                <li><a href="#overview-of-the-data-breach">Overview of the Data Breach</a></li>
-                <li><a href="#attack-vectors">Attack Vectors</a></li>
-                <li><a href="#solutions">Solutions</a></li>
-              </ul>
-          </li>
-        </ul>
-    </li>
-    <li><a href="#progress">Progress</a></li>
+    <li><a href="#disclaimer">Disclaimer</a></li>
+    <li><a href="#executive-summary">Executive Summary</a></li>
+    <li><a href="#background">Background</a></li>
+    <!-- <li><a href="#progress">Progress</a></li> -->
+    <li><a href="#networking-&-it-infrastructure">Networking & IT Infrastructure</a></li>
+    <li><a href="#windows-&-linux-server-administration">Windows & Linux Server Administration</a></li>
+    <li><a href="#secure-cloud-environment">Secure Cloud Environment</a></li>
+    <li><a href="#cybersecurity-fundamentals">Cybersecurity Fundamentals</a></li>
+    <li><a href="#ethical-hacking-&-pentesting">Ethical Hacking & Pentesting</a></li>
+    <li><a href="#cybersecurity-operations">Cybersecurity Operations</a></li>
+    <li><a href="#cybersecurity-forensics">Cybersecurity Forensics</a></li>
+    <li><a href="#cybersecurity-grc">Cybersecurity GRC</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
     <li><a href="#team-members">Team Members</a></li>
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
     <li><a href="#references">References</a></li>
   </ol>
 </details>
+
 
 ## Disclaimer
 
