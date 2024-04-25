@@ -50,30 +50,37 @@ Readers are encouraged to consider the context of this project as a simulated ex
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+## Executive Summary
+
+4GuysCoffee, a Singapore-based small and medium enterprise, is a premier destination for exceptional coffee experiences. Operating exclusively within the dynamic city-state of Singapore, we curate an exquisite selection of premium coffee beans sourced from diverse countries, ensuring a rich and high-quality offering. Our local facility in Singapore meticulously roasts and processes these beans, packaging them for sale and use in our six cafes spread across the city-state.
+
+This detailed report navigates through the intricacies of our network infrastructure, which was strategically designed at our Singapore headquarters and empowered by cutting-edge tools from Cisco. Our deployment encompasses advanced configurations of switches, routers, and access points, ensuring impeccable connectivity and performance. To elevate organisational efficiency, we have implemented a sophisticated network design, utilising subnets and Virtual Local Area Networks (VLANs) to segregate departments within our headquarters. This fortifies network security and streamlines data traffic, optimising overall network management.
+
+Embracing the cloud for scalability and adaptability, we have established a robust web server through an Elastic Compute Cloud (EC2) instance on Amazon Web Services (AWS). This cloud-centric approach guarantees reliable web hosting capabilities. Our identity management system revolves around Windows Active Directory at our Singapore headquarters, providing a centralised and secure means of user authentication and authorisation. Concurrently, an on-premise local file server facilitates seamless collaboration among our internal teams. We have incorporated an AWS file server to expand our data storage capabilities, exploring diverse storage solutions like Amazon S3 for off-site backup, enhanced data redundancy, and accessibility.
+
+To meet the operational requirements of our cafe managers, we have implemented a dedicated PC setup in our 4GuysCoffee cafes. Through a secure Virtual Private Network (VPN) connection, branch managers can access the file server at the headquarters, facilitating swift retrieval of Point of Sale (POS) materials and critical information. This strategic integration of networking tools, cloud services, and on-premise solutions underscores 4GuysCoffee's commitment to establishing a resilient and efficient IT infrastructure aligned with our organisational goals. It is tailored to support seamless operations within Singapore's dynamic and thriving coffee scene.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## Background
 
-Welcome to 4GuysCoffee. We are a Singapore-based small and medium enterprise, stands as a premier destination for exceptional coffee experiences. Operating exclusively within the dynamic city-state of Singapore, we curate an exquisite selection of premium coffee beans sourced from diverse countries, ensuring a rich and high-quality offering. Our local facility in Singapore meticulously roasts and processes these beans, packaging them for sale and use in our six cafes spread across the city-state.
+4GuysCoffee, a thriving small and medium enterprise headquartered in Singapore, has made a significant mark in the competitive and dynamic coffee industry. Our commitment to delivering exceptional coffee experiences is evident in our focus on using ethically sourced and sustainably grown beans, which are meticulously roasted and packaged in a local facility. This emphasis on sustainability aligns with the growing consumer demand for ethically sourced and environmentally friendly products in the global coffee market.
 
-This document offers a detailed insight into 4GuysCoffee's network infrastructure, carefully developed at our headquarters in Singapore using cutting-edge tools from Cisco. Our setup incorporates advanced configurations of switches, routers, and access points, ensuring flawless connectivity and performance. We've employed subnets and Virtual Local Area Networks (VLANs) to boost organisational efficiency, fortify network security, and optimise data traffic management.
+The company's cafes serve as more than just retail spaces; they are vibrant hubs that offer a diverse range of specialty coffees, providing customers with a unique and memorable coffee culture experience. Whether it is the aromatic blends, distinct brewing techniques, or the ambience of our cafes, 4GuysCoffee has carved a niche for itself in an industry where quality and innovation are paramount.
+In addition to its physical presence, 4GuysCoffee has ventured into the digital realm by launching a global e-commerce store. This strategic move allows us to reach coffee enthusiasts worldwide, offering our signature roasted coffee beans for sale online. This expansion into e-commerce reflects the company's adaptability and recognition of evolving consumer preferences, especially when online shopping for speciality products has become increasingly popular.
 
-In embracing cloud technology for scalability, we've established a web server on Amazon Web Services (AWS). Our identity management system relies on Windows Active Directory for centralised and secure user authentication. Moreover, both local and AWS file servers facilitate collaboration and extend our data storage capabilities, incorporating solutions like Amazon S3 for enhanced redundancy and accessibility.
-
-To meet the needs of our cafe managers, we've implemented dedicated PC setups with secure Virtual Private Network (VPN) connections, enabling swift access to headquarters' resources. Our IT infrastructure is tailored to support operations within Singapore's dynamic coffee scene, prioritising resilience and efficiency. 
-
-Finally, we've incorporated cybersecurity defence strategies and included our annual cybersecurity report to underscore our commitment to safeguarding operations.
-
+### Ficticious SME Profile:
+* Name of the SME: 4GuysCoffee
+* Industry: In the dynamic coffee industry, 4GuysCoffee faces challenges such as intense competition, navigating a complex supply chain for sourcing sustainable beans, staying attuned to rapidly evolving consumer trends, and potential impacts from global economic fluctuations. However, the company is well-positioned to capitalise on promising prospects. The expanding global coffee culture, with an increasing appreciation for speciality and artisanal offerings, allows 4GuysCoffee to distinguish itself. The recent launch of our e-commerce store aligns with the rising trend of online shopping for speciality products, offering access to a broader global customer base. By maintaining a commitment to sustainability and locally sourced beans, the company aligns with the growing consumer demand for eco-friendly and socially responsible products. Moreover, opportunities for innovation in brewing techniques and flavour profiles and the cultural diversity of operating in multiple countries present avenues for growth and enhanced market appeal. Navigating these challenges while leveraging these prospects requires a strategic and adaptable approach, positioning 4GuysCoffee for continued success in the evolving global coffee landscape.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+## Networking & IT Infrastructure
 
-
-## Infrastructures
-
-### Networking
+### Overview
 
 The network architecture adopts a best-in-class approach by implementing a 3-tier hierarchical design for the headquarters and a relatively simple design for the branches, widely acknowledged as an industrial best practice for creating reliable, scalable, and cost-effective networks (GeeksforGeeks, 2022). This design optimises network performance, facilitates seamless scalability to accommodate future growth, and ensures cost efficiency in network management and maintenance. The hierarchical structure provides a clear separation of functions, enhancing overall network reliability and robustness.
 
@@ -87,9 +94,107 @@ The network architecture adopts a best-in-class approach by implementing a 3-tie
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Cloud Operations
+### Network Diagram
 
-Embracing the cloud for scalability and flexibility, we have established a web server through an Elastic Compute Cloud (EC2) instance on Amazon Web Services (AWS). This cloud-based approach ensures robust and reliable web hosting capabilities. In terms of identity management, 4GuysCoffee’s head office is equipped with Windows Active Directory, providing a centralized and secure means of managing user authentication and authorisation. Simultaneously, a local file server on-premise facilitates seamless file sharing and collaboration among our internal teams. Expanding their data storage capabilities, we have also incorporated a file server on AWS, exploring various storage solutions such as Amazon S3. This not only serves as an off-site backup but also enhances data redundancy and accessibility.
+IMG (Network Diagram)
+
+### Network Specifications
+
+#### Subnet Assignments
+
+IMG (t2.1 & t2.2)
+
+#### IP Addressing Scheme
+
+The devices in the network are assigned the following IP Address range as defined in Table 2.3.
+
+IMG (t2.3)
+
+### System Configurations
+
+#### HQ - Switches & Routers
+
+##### Basic Device Configuration (VLAN Creation for HQ switches)
+
+IMG (Figure 2.1 & 2.2)
+
+##### Multilayer Switch configurations - VLANs, OSPF & HSRP
+
+IMG (Figure 2.3, 2.4 & 2.5)
+
+##### EtherChannel Configuration & Verification
+
+IMG (Figure 2.6, 2.7, 2.8, 2.9, 2.10)
+
+##### WLC Configuration & RADIUS Server Authentication
+
+IMG (Figure 2.11 - 2.18)
+
+#### Branch - Switches & Routers
+
+##### Switch VLANs
+
+table 4, fig 2.19
+
+##### Router
+
+###### SVIs on Router for Inter-VLAN routing
+
+Figure 2.20, 2.21
+
+###### Router as DHCP
+
+Figure 2.22, 2.23
+
+###### Router OSPF verification
+
+Figure 2.24
+
+##### Access Points Configuration
+
+Figure 2.25 - 2.26
+
+##### Access Points Configuration
+
+###### Connectivity between different VLANs
+
+###### HQ LAN
+
+figure 2.27
+
+###### Branch LAN
+
+figure 2.28
+
+###### Connectivity Across LAN
+
+figure 2.29
+
+###### Site-to-site VPN
+
+figure 2.30 - 2.32
+
+###### VPN Verification
+
+figure 2.33
+
+## Windows & Linux Server Administration
+
+### Microsoft Active Directory
+
+This section functions as an exhaustive guide delineating our strategic approach to harnessing the capabilities of Active Directory, elucidating the meticulous procedures we have undertaken to establish a resilient and secure directory service within our organisation. The implementation of Active Directory is paramount in our pursuit of constructing a centralised and methodically organised network, proficiently managing user accounts, facilitating seamless resource access, and ensuring a secure and scalable operational environment.
+In an unwavering commitment to fortifying data security, we have instituted stringent measures to mitigate potential threats proactively, safeguard sensitive information, and uphold the integrity of our systems. Our adoption of a dual-server approach underscores our steadfast dedication to delivering a seamless and secure digital ecosystem.
+
+A dedicated PC setup has been established within each cafe to address the operational requisites of our branch managers, particularly those overseeing our cafe outlets. Leveraging a secure Virtual Private Network (VPN) connection, these branch managers can seamlessly access the central file server located at the head office. This robust infrastructure enables the swift retrieval of Point-of-Sale (POS) materials and other critical information, fostering a cohesive and responsive network environment.
+
+
+### AD Installation
+
+Active Directory Domain Services (AD DS) is a critical component in Windows Server environments, and several vital functionalities and benefits underscore its importance.
+
+The [Installation Video](https://www.youtube.com/watch?v=k5VWd_0uTiQ&t=0s) documents the steps to ensure the AD DS runs correctly.
+
+<!-- CONT FROM HERE -->
 
 #### AWS CloudTrail
 
