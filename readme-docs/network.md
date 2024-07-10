@@ -12,7 +12,6 @@ The network architecture adopts a best-in-class approach by implementing a 3-tie
 
 * Routing is achieved through OSPF, chosen for its compatibility with heterogeneous networks, as opposed to EIGRP, which is limited to homogeneous networks. WLAN security is bolstered with RADIUS server authentication, providing users with unique username and password combinations for heightened access control. For secure site-to-site connections, IPSec VPNs are implemented.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Network Diagram
 
@@ -97,3 +96,5 @@ figure 2.30 - 2.32
 ###### VPN Verification
 
 figure 2.33
+
+<p align="right">(<a href="../README.md/#networking--it-infrastructure">back</a>)</p>
