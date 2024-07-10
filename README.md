@@ -82,103 +82,32 @@ In addition to its physical presence, 4GuysCoffee has ventured into the digital 
 
 ### Overview
 
-The network architecture adopts a best-in-class approach by implementing a 3-tier hierarchical design for the headquarters and a relatively simple design for the branches, widely acknowledged as an industrial best practice for creating reliable, scalable, and cost-effective networks (GeeksforGeeks, 2022). This design optimises network performance, facilitates seamless scalability to accommodate future growth, and ensures cost efficiency in network management and maintenance. The hierarchical structure provides a clear separation of functions, enhancing overall network reliability and robustness.
+This section provides a detailed analysis of the network infrastructure implemented at 4GuysCoffee. The analysis highlights the key features of the network design, emphasising its focus on scalability, reliability, and cost-effectiveness. We explore the hierarchical structure employed at the headquarters and the rationale behind the simpler design used in branch locations. The report delves into the specific technologies and protocols utilised within the network, including VLANs, OSPF routing, and security measures like HSRP and RADIUS server authentication. Finally, the report examines the configuration of the Wireless LAN Controller (WLC) and its role in managing the network's access points.
 
 Full report [here](readme-docs/network.md).
 
+#### Network Design & Architecture
+
+4GuysCoffee's network architecture leverages a best-in-class approach,
+adopting a 3-tier hierarchical design for the headquarters and a simpler design for the branches. This aligns with industry best practices for creating dependable, scalable, and cost-efficient networks. The hierarchical structure facilitates clear separation of functionalities, enhancing overall network reliability and manageability.
+
 #### Distribution & Core Layer
 
-* The network infrastructure is designed with a robust and resilient architecture, featuring a single HQ-router complemented by two multilayer switches for efficient inter-VLAN routing and enhanced redundancy through HSRP configuration. An EtherChannel is implemented between the switches to optimise bandwidth and load balancing, significantly boosting overall network performance. The utilisation of subnets and VLANs in tandem forms a multilayer security approach, strategically addressing vulnerabilities in both Layers 2 and 3.
+The network boasts a robust and resilient architecture featuring a centralised HQ router complemented by two multilayer switches. These switches enable efficient inter-VLAN routing and offer redundancy through HSRP configuration. Additionally, an EtherChannel optimises bandwidth and load balancing, significantly boosting network performance. The strategic implementation of subnets and VLANs establishes a multi-layered security approach, safeguarding against vulnerabilities at both Layer 2 and Layer 3.
 
-* To future-proof the network for business growth, subnet selection follows Cisco's addressing guide recommendations, employing VLSM while allowing space for growth /16 and /24 for the HQ and various departments, ensuring scalability. Layer 2 security is prioritised with measures like PortFast, BPDUguard, port security, and auto-trunking disabling to fortify against potential attacks.
+To accommodate future growth, subnet selection adheres to Cisco's addressing guidelines, incorporating VLSM to allocate adequate space for expansion (/16 and /24 for HQ and departments). The network prioritises Layer 2 security with measures like PortFast, BPDUguard, and port security, fortifying the network against potential attacks. OSPF routing, known for its compatibility with diverse network environments, is employed instead of EIGRP.  RADIUS server authentication strengthens WLAN security by requiring users to have unique login credentials. Secure site-to-site connections are established using IPSec VPNs.
 
-* Routing is achieved through OSPF, chosen for its compatibility with heterogeneous networks, as opposed to EIGRP, which is limited to homogeneous networks. WLAN security is bolstered with RADIUS server authentication, providing users with unique username and password combinations for heightened access control. For secure site-to-site connections, IPSec VPNs are implemented.
+#### WLC Configuration & RADIUS Server Authentication
+
+A scalable Wireless LAN Controller (WLC) manages the WLAN infrastructure, allowing for seamless expansion as needed. The WLC provides an additional layer of security by offering centralised AP deployment, rogue device detection, and network protection through a firewall. Furthermore, a RADIUS server necessitates login credentials for staff users accessing the office Wi-Fi network, adding another layer of access control.
+
+#### Summary
+
+The analysis reveals that 4GuysCoffee's network infrastructure prioritises scalability, reliability, and cost-effectiveness. The network design incorporates industry best practices and utilises robust technologies and protocols to ensure secure and efficient network operation. The hierarchical structure, coupled with the implementation of VLANs, subnets, and various security measures, safeguards the network against potential vulnerabilities. The WLC plays a crucial role in managing access points and enhancing wireless network security. Overall, the network infrastructure appears well-designed to support the current and future needs of 4GuysCoffee.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Network Diagram
-
-IMG (Network Diagram)
-
-### Network Specifications
-
-#### Subnet Assignments
-
-IMG (t2.1 & t2.2)
-
-#### IP Addressing Scheme
-
-The devices in the network are assigned the following IP Address range as defined in Table 2.3.
-
-IMG (t2.3)
-
-### System Configurations
-
-#### HQ - Switches & Routers
-
-##### Basic Device Configuration (VLAN Creation for HQ switches)
-
-IMG (Figure 2.1 & 2.2)
-
-##### Multilayer Switch configurations - VLANs, OSPF & HSRP
-
-IMG (Figure 2.3, 2.4 & 2.5)
-
-##### EtherChannel Configuration & Verification
-
-IMG (Figure 2.6, 2.7, 2.8, 2.9, 2.10)
-
-##### WLC Configuration & RADIUS Server Authentication
-
-IMG (Figure 2.11 - 2.18)
-
-#### Branch - Switches & Routers
-
-##### Switch VLANs
-
-table 4, fig 2.19
-
-##### Router
-
-###### SVIs on Router for Inter-VLAN routing
-
-Figure 2.20, 2.21
-
-###### Router as DHCP
-
-Figure 2.22, 2.23
-
-###### Router OSPF verification
-
-Figure 2.24
-
-##### Access Points Configuration
-
-Figure 2.25 - 2.26
-
-##### Access Points Configuration
-
-###### Connectivity between different VLANs
-
-###### HQ LAN
-
-figure 2.27
-
-###### Branch LAN
-
-figure 2.28
-
-###### Connectivity Across LAN
-
-figure 2.29
-
-###### Site-to-site VPN
-
-figure 2.30 - 2.32
-
-###### VPN Verification
-
-figure 2.33
+<!-- CONT FROM HERE -->
 
 ## Windows & Linux Server Administration
 
@@ -196,7 +125,7 @@ Active Directory Domain Services (AD DS) is a critical component in Windows Serv
 
 The [Installation Video](https://www.youtube.com/watch?v=k5VWd_0uTiQ&t=0s) documents the steps to ensure the AD DS runs correctly.
 
-<!-- CONT FROM HERE -->
+
 
 <!-- #### AWS CloudTrail
 
