@@ -97,4 +97,4 @@ figure 2.30 - 2.32
 
 figure 2.33
 
-<p align="right">(<a href="../README.md/#networking--it-infrastructure">back</a>)</p>
+<p align="right">(<a href="https://github.com/4GuysCoffee/4GuysCoffee.github.io/blob/main/README.md/#networking--it-infrastructure">back</a>)</p>
