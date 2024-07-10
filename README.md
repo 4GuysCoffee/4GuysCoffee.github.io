@@ -18,8 +18,8 @@
     <li><a href="#executive-summary">Executive Summary</a></li>
     <li><a href="#background">Background</a></li>
     <!-- <li><a href="#progress">Progress</a></li> -->
-    <li><a href="#networking-&-it-infrastructure">Networking & IT Infrastructure</a></li>
-    <li><a href="#windows-&-linux-server-administration">Windows & Linux Server Administration</a></li>
+    <li><a href="#networking--it-infrastructure">Networking & IT Infrastructure</a></li>
+    <li><a href="#windows--linux-server-administration">Windows & Linux Server Administration</a></li>
     <li><a href="#secure-cloud-environment">Secure Cloud Environment</a></li>
     <li><a href="#cybersecurity-fundamentals">Cybersecurity Fundamentals</a></li>
     <li><a href="#ethical-hacking-&-pentesting">Ethical Hacking & Pentesting</a></li>
@@ -83,6 +83,8 @@ In addition to its physical presence, 4GuysCoffee has ventured into the digital 
 ### Overview
 
 The network architecture adopts a best-in-class approach by implementing a 3-tier hierarchical design for the headquarters and a relatively simple design for the branches, widely acknowledged as an industrial best practice for creating reliable, scalable, and cost-effective networks (GeeksforGeeks, 2022). This design optimises network performance, facilitates seamless scalability to accommodate future growth, and ensures cost efficiency in network management and maintenance. The hierarchical structure provides a clear separation of functions, enhancing overall network reliability and robustness.
+
+Full report [here](readme-docs/network.md).
 
 #### Distribution & Core Layer
 
@@ -196,11 +198,11 @@ The [Installation Video](https://www.youtube.com/watch?v=k5VWd_0uTiQ&t=0s) docum
 
 <!-- CONT FROM HERE -->
 
-#### AWS CloudTrail
+<!-- #### AWS CloudTrail
 
-The implementation of AWS CloudTrail for 4GuysCoffee is a strategic move that aligns with our commitment to transparency, security, and operational excellence. With CloudTrail, we gain unparalleled visibility into every interaction within our AWS infrastructure. This means we can monitor and audit changes made to our resources, ensuring that our AWS environment is secure and compliant. The detailed logs, stored securely in dedicated S3 buckets, are crucial for forensic analysis and compliance reporting. CloudTrail's ability to track data events, especially in our S3 storage, enhances our understanding of resource access and modification, offering valuable insights for continuous improvement.
+The implementation of AWS CloudTrail for 4GuysCoffee is a strategic move that aligns with our commitment to transparency, security, and operational excellence. With CloudTrail, we gain unparalleled visibility into every interaction within our AWS infrastructure. This means we can monitor and audit changes made to our resources, ensuring that our AWS environment is secure and compliant. The detailed logs, stored securely in dedicated S3 buckets, are crucial for forensic analysis and compliance reporting. CloudTrail's ability to track data events, especially in our S3 storage, enhances our understanding of resource access and modification, offering valuable insights for continuous improvement. -->
 
-#### AWS CloudWatch
+<!-- #### AWS CloudWatch
 
 AWS CloudWatch emerges as a vital tool in our quest for real-time monitoring and actionable insights. By creating custom dashboards, we consolidate key metrics from various AWS resources, giving us a holistic view of our operational landscape. Alarms set in CloudWatch allow us to respond promptly to deviations from normal operating conditions. This means proactive issue resolution and improved overall system reliability. CloudWatch Logs centralises our log management, simplifying debugging and performance monitoring for our applications. Creating custom metrics ensures a tailored understanding of our application's performance, empowering us to optimise user experiences across our cafes and e-commerce platforms.
 
@@ -210,7 +212,7 @@ The integration of AWS CloudTrail, CloudWatch, and Simple Notification Service (
 
 4GuysCoffee harnesses a robust set of AWS services to optimise its operations comprehensively. Amazon DynamoDB facilitates real-time inventory management across cafes and warehouses with its scalable NoSQL database, while AWS IoT Core connects smart sensors for efficient monitoring and control. Amazon EC2 ensures a scalable and highly available hosting environment for the e-commerce platform, supported by Amazon S3 for secure storage of product images and content. The global reach is enhanced through Amazon CloudFront, providing faster content delivery. Streamlining global operations is achieved with Amazon VPC, and AWS Lambda facilitates automation. In pursuing sustainability and security, AWS Greengrass manages energy consumption, and AWS WAF and AWS CloudTrail ensure robust cybersecurity measures. These services empower 4GuysCoffee to thrive in a dynamic, secure digital landscape while delivering an enhanced customer experience.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 ### Server Administration
 
