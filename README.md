@@ -85,7 +85,7 @@ In addition to its physical presence, 4GuysCoffee has ventured into the digital 
 
 This section provides a detailed analysis of the network infrastructure implemented at 4GuysCoffee. The analysis highlights the key features of the network design, emphasising its focus on scalability, reliability, and cost-effectiveness. We explore the hierarchical structure employed at the headquarters and the rationale behind the simpler design used in branch locations. The report delves into the specific technologies and protocols utilised within the network, including VLANs, OSPF routing, and security measures like HSRP and RADIUS server authentication. Finally, the report examines the configuration of the Wireless LAN Controller (WLC) and its role in managing the network's access points.
 
-Full report [here](readme-docs/network.md).
+Full report [here](readme-docs/Networking%20%26%20IT%20Infrastructure.pdf).
 
 #### Network Design & Architecture
 
