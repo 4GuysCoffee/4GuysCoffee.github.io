@@ -128,7 +128,7 @@ Our adoption of Active Directory aims to streamline and enhance our internal IT 
 
 Ensuring the security of our Active Directory environment is paramount. We have implemented several strategies, including enforcing Group Policy Objects (GPOs) for password policies and user rights assignments, configuring strict firewall rules, and regularly updating and patching systems to address vulnerabilities. Additionally, we have disabled SMB1 and LLMNR, utilized non-standard port configurations for Remote Desktop Protocol (RDP), and implemented physical security measures for servers housing domain controllers.
 
-For the full detailed report, please refer to [this link](<insert link>).
+For the full detailed report, please refer to [this link](readme-docs/Windows%20Server%20Administration.md).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -144,27 +144,6 @@ Additionally, configuring firewalls, such as iptables, to control incoming and o
 The benefits of hardening a Linux server are multifaceted. Enhanced security measures reduce the risk of unauthorized access, data breaches, and potential disruptions. By minimising unnecessary services and tightening access controls, the attack surface is diminished, making it more challenging for malicious actors to exploit vulnerabilities. Regular system audits contribute to early threat detection and allow for proactive measures to maintain the integrity and reliability of the server. In essence, the hardening process is an essential practice for safeguarding the server's overall stability and protecting sensitive information from potential cyber threats.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!--
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
--->
 
 <!-- ROADMAP -->
 ## Cybersecurity
