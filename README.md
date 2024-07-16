@@ -110,212 +110,25 @@ A scalable Wireless LAN Controller (WLC) manages the WLAN infrastructure, allowi
 
 ### Microsoft Active Directory
 
-This section functions as an exhaustive guide delineating our strategic approach to harnessing the capabilities of Active Directory, elucidating the meticulous procedures we have undertaken to establish a resilient and secure directory service within our organisation. The implementation of Active Directory is paramount in our pursuit of constructing a centralised and methodically organised network, proficiently managing user accounts, facilitating seamless resource access, and ensuring a secure and scalable operational environment.
-In an unwavering commitment to fortifying data security, we have instituted stringent measures to mitigate potential threats proactively, safeguard sensitive information, and uphold the integrity of our systems. Our adoption of a dual-server approach underscores our steadfast dedication to delivering a seamless and secure digital ecosystem.
+The section is an excerpt of our report that provides an in-depth guide to our strategic approach in implementing Microsoft Active Directory (AD), outlining the detailed procedures undertaken to establish a secure and resilient directory service within our organisation. 
 
-A dedicated PC setup has been established within each cafe to address the operational requisites of our branch managers, particularly those overseeing our cafe outlets. Leveraging a secure Virtual Private Network (VPN) connection, these branch managers can seamlessly access the central file server located at the head office. This robust infrastructure enables the swift retrieval of Point-of-Sale (POS) materials and other critical information, fostering a cohesive and responsive network environment.
+The implementation of AD is crucial for building a centralised and systematically organised network, efficiently managing user accounts, facilitating resource access, and ensuring a secure and scalable operational environment. We have implemented stringent measures to proactively mitigate potential threats, safeguard sensitive information, and uphold system integrity. Our dual-server approach highlights our commitment to delivering a seamless and secure digital ecosystem.
 
+Each cafe is equipped with a dedicated PC setup for branch managers, who can securely access the central file server at the head office via a Virtual Private Network (VPN). This infrastructure ensures swift retrieval of Point-of-Sale (POS) materials and other critical information, fostering a cohesive and responsive network environment.
 
 ### AD Installation
 
-Active Directory Domain Services (AD DS) is a critical component in Windows Server environments, and several vital functionalities and benefits underscore its importance.
-
-The [Installation Video](https://www.youtube.com/watch?v=k5VWd_0uTiQ&t=0s) documents the steps to ensure the AD DS runs correctly.
-
-
-
-<!-- #### AWS CloudTrail
-
-The implementation of AWS CloudTrail for 4GuysCoffee is a strategic move that aligns with our commitment to transparency, security, and operational excellence. With CloudTrail, we gain unparalleled visibility into every interaction within our AWS infrastructure. This means we can monitor and audit changes made to our resources, ensuring that our AWS environment is secure and compliant. The detailed logs, stored securely in dedicated S3 buckets, are crucial for forensic analysis and compliance reporting. CloudTrail's ability to track data events, especially in our S3 storage, enhances our understanding of resource access and modification, offering valuable insights for continuous improvement. -->
-
-<!-- #### AWS CloudWatch
-
-AWS CloudWatch emerges as a vital tool in our quest for real-time monitoring and actionable insights. By creating custom dashboards, we consolidate key metrics from various AWS resources, giving us a holistic view of our operational landscape. Alarms set in CloudWatch allow us to respond promptly to deviations from normal operating conditions. This means proactive issue resolution and improved overall system reliability. CloudWatch Logs centralises our log management, simplifying debugging and performance monitoring for our applications. Creating custom metrics ensures a tailored understanding of our application's performance, empowering us to optimise user experiences across our cafes and e-commerce platforms.
-
-The integration of AWS CloudTrail, CloudWatch, and Simple Notification Service (SNS) stands as a pivotal enhancement for 4GuysCoffee, offering a holistic approach to monitoring and managing our AWS infrastructure. With CloudTrail, we gain a meticulous audit trail of every interaction, ensuring transparency and bolstering our commitment to security and compliance. The seamless integration with CloudWatch allows us real-time visibility into our operational landscape through custom dashboards, empowering us to address issues and optimise system reliability proactively. CloudWatch Alarms, integrated with SNS, provide instant notifications, ensuring that our team stays informed about critical events, from security breaches to operational anomalies. This trifecta of services fortifies our ability to maintain the integrity of our AWS environment and streamline communication, enabling swift responses to potential challenges. As a result, our commitment to a secure, efficient, and customer-focused operation in the global coffee industry is further solidified, ensuring that we stay ahead in this dynamic and competitive market.
-
-#### Other AWS Resources
-
-4GuysCoffee harnesses a robust set of AWS services to optimise its operations comprehensively. Amazon DynamoDB facilitates real-time inventory management across cafes and warehouses with its scalable NoSQL database, while AWS IoT Core connects smart sensors for efficient monitoring and control. Amazon EC2 ensures a scalable and highly available hosting environment for the e-commerce platform, supported by Amazon S3 for secure storage of product images and content. The global reach is enhanced through Amazon CloudFront, providing faster content delivery. Streamlining global operations is achieved with Amazon VPC, and AWS Lambda facilitates automation. In pursuing sustainability and security, AWS Greengrass manages energy consumption, and AWS WAF and AWS CloudTrail ensure robust cybersecurity measures. These services empower 4GuysCoffee to thrive in a dynamic, secure digital landscape while delivering an enhanced customer experience.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
-### Server Administration
-
-This section serves as a comprehensive guide to understanding our company's decision to leverage Active Directory and outlines the meticulous process we've undertaken to establish a robust and secure directory service for our organisation.
-
-At 4GuysCoffee, our primary goal is to streamline and enhance our internal IT infrastructure. By implementing Active Directory, we aim to create a centralised and organised network that efficiently manages user accounts, facilitates seamless resource access, and ensures a secure and scalable environment. This move is part of our commitment to improving operational efficiency and providing a secure foundation for our company's growth.
+Active Directory Domain Services (AD DS) is essential in Windows Server environments, providing critical functionalities and benefits. An [installation video](https://www.youtube.com/watch?v=k5VWd_0uTiQ&t=0s) documents the steps to ensure proper AD DS operation.
 
 #### Importance of Active Directory:
 
-Active Directory plays a pivotal role in modern IT environments. It not only simplifies user management but also provides a centralised platform for authentication, authorisation, and configuration management. With AD in place, we anticipate improved security, reduced administrative overhead, and enhanced productivity as employees gain simplified access to network resources.
+Our adoption of Active Directory aims to streamline and enhance our internal IT infrastructure. Active Directory simplifies user management, providing a centralized platform for authentication, authorization, and configuration management. With AD in place, we anticipate improved security, reduced administrative overhead, and enhanced productivity as employees gain simplified access to network resources.
 
-#### Demonstrating Our Active Directory Setup:
+#### Securing Active Directory:
 
-This section is designed to walk you through the step-by-step process of setting up our Active Directory domain, "4GuysCoffee." From initial planning to the execution of domain controllers and the configuration of essential AD components, this document will serve as a comprehensive reference and gain you insights into the meticulous planning and implementation of our Active Directory setup and the measures we've taken to fortify our network against potential security vulnerabilities. Thank you for being part of this crucial initiative at 4GuysCoffee!
+Ensuring the security of our Active Directory environment is paramount. We have implemented several strategies, including enforcing Group Policy Objects (GPOs) for password policies and user rights assignments, configuring strict firewall rules, and regularly updating and patching systems to address vulnerabilities. Additionally, we have disabled SMB1 and LLMNR, utilized non-standard port configurations for Remote Desktop Protocol (RDP), and implemented physical security measures for servers housing domain controllers.
 
-#### Active Directory Installation
-
-[![Alt text](https://img.youtube.com/vi/k5VWd_0uTiQ/0.jpg)](https://www.youtube.com/watch?v=k5VWd_0uTiQ&t=0s)
-
-Active Directory Domain Services (AD DS) is a critical component in Windows Server environments, and its importance is underscored by several key functionalities and benefits.
-
-These are comprehensive steps that should be taken to ensure the AD DS is up and running correctly.
-
-1. Prepare the Server:
-    * Ensure the server has a static IP address.
-    * Set the server's DNS to its own IP address.
-
-2. Open Server Manager:
-    * Launch Server Manager from the taskbar or Start menu.
-
-3. Add Roles and Features:
-    * Click on "Manage" and then select "Add Roles and Features."
-    * Follow the wizard to select the server and add the "Active Directory Domain Services" role.
-
-4. Configure Role Services:
-    * In the "Add Roles and Features Wizard," click "Next" until the "Select server roles" page.
-    * Choose "Active Directory Domain Services."
-    * Follow the prompts to add required features.
-
-5. Install AD DS:
-    * Review the information and click "Install" to begin the installation.
-
-6. Promote the Server to a Domain Controller:
-    * After the installation, a notification will appear. Click on "Promote this server to a domain controller."
-
-7. Active Directory Domain Services Configuration Wizard:
-    * Choose "Add a new forest" if this is the first domain controller in the forest.
-    * Enter the root domain name (e.g., 4GuysCoffee.com).
-    * Set the Directory Services Restore Mode (DSRM) password.
-    * Review the NetBIOS name suggestion.
-
-8. Domain Controller Options:
-    * Choose the domain and forest functional levels.
-    * Configure DNS options if needed.
-
-9. Additional Options:
-    * Specify the location for the AD DS database, log files, and SYSVOL.
-    * Review settings and click "Next."
-
-10. Review Options:
-    * Review the configuration settings and click "Install."
-
-11. Complete the Installation:
-    * After the server restarts, log in using the domain administrator credentials.
-
-#### Post-Installation Steps:
-
-1. Verify Active Directory Installation:
-    * Open "Active Directory Users and Computers" to confirm the AD structure.
-
-2. Configure DNS:
-    * Verify DNS settings to ensure proper resolution.
-
-3. Update DHCP Settings (if applicable):
-    * If the network uses DHCP, update DHCP settings to point to the new domain controller for DNS.
-
-4. Backup:
-    * Regularly back up the domain controller, especially the Active Directory database.
-
-5. In our case, we have added extra domain controllers (DC). These are the steps we took:
-    * Configure the Static IP for the new PC.
-    * As for DNS, make sure it is set according to the DNS address of the main DC.
-    * Add AD DS and DHCP roles as per guided in previous steps.
-    * Promote the new PC as a Domain Controller.
-    * Flexible Single Master Operation, or FSMO roles can also be configured from the Active Directory Users and Computers tool.
-    * Tip: The current FSMO roles can be determined by running this command in the command prompt
-    ```sh
-    netdom query fsmo
-    ```
-    ![Delegating Operations Masters](HTDOCS/img/dc-assignment.png)
-    ![Figure showing the newly added DC](HTDOCS/img/dc-assignment2.png)
-<!-- * npm
-  ```sh
-  npm install npm@latest -g
-  ``` -->
-
-#### Adding a PC to the Server
-
-Prerequisites
-Before proceeding, make sure the following prerequisites are met:
-  * The PC and Active Directory server are on the same network.
-  * The PC has a valid IP address and can communicate with the Active Directory server.
-  * You have administrative credentials for the Active Directory domain.
-
-1. Access System Properties on the PC:
-    * Right-click on "This PC" or "Computer" on your desktop or in the File Explorer.
-    * Select "Properties" from the context menu.
-
-2. Access System Info:
-    * In the System Properties window, click on "Advanced system settings" on the left sidebar.
-
-3. Join a Domain:
-    * In the System Properties window, under the "Computer Name" tab, click on the "Change" button.
-
-4. Enter Domain Information:
-    * Select the option for "Domain" and enter the name of your Active Directory domain.
-    * Click "OK."
-
-5. Provide Credentials:
-    * You will be prompted to provide credentials for an account that has permission to join computers to the domain. Enter the username and password of a domain administrator.
-    * Click "OK."
-
-6. Confirm Domain Join:
-    * A dialog box will confirm the successful connection to the domain.
-    * Click "OK."
-
-7. Restart the PC:
-    * You will be prompted to restart the computer to apply the changes.
-    * Click "Restart Now" or restart the PC manually.
-
-8. Log in with Domain Credentials:
-    * After the restart, on the login screen, select the domain from the drop-down menu.
-    * Log in using domain credentials (username and password).
-
-
-#### Creating Organizational Units (OUs) and Security Groups
-
-1. Open Active Directory Users and Computers
-
-2. In the left pane, expand the domain node.
-
-3. Create Organizational Unit:
-    * Right-click on the domain node or an existing OU where you want to create the new OU.
-    * Select "New" and then choose "Organizational Unit."
-
-4. Enter OU Name:
-    * Provide a name for the new OU and click "OK."
-
-5. Creating Security Groups:
-    * Right-click on the domain node or an existing OU where you want to create the new security group.
-    * Select "New" and then choose "Group."
-
-6. Enter Group Information:
-    * Enter a name for the security group.
-    * Choose the group scope (e.g., Global, Domain Local, Universal) based on your requirements.
-    * Choose the group type (e.g., Security, Distribution) based on whether the group will be used for security or distribution purposes.
-    * Click "OK."
-
-7. Group Membership:
-    * After creating security groups, you can manage their membership by double-clicking on the group and adding members in the "Members" tab.
-
-
-
-#### Securing Active Directory
-
-Ensuring the security of our Active Directory environment is of paramount importance to us. Following are the specific strategies we have implemented to harden our AD setup:
-
-1. Group Policy Objects (GPOs) to enforce security settings such as password policies (enforce strong passwords, length of the passwords, expiration, etc), and user rights assignments.
-2. Account lockout policies to limit login attempts and protect against brute-force attacks.
-3. We have configured the [GPO Rules](https://youtu.be/aSS2KEWCLHo) to turn the firewalls on automatically in all of our workstations and disallow users to disable them. 
-4. Inbound [Firewall Rules](https://youtu.be/vZaHpq-9_o0) allow only essential traffic to our domain controllers, limit unnecessary ports and services and implement outbound firewall rules to restrict unnecessary communication from domain controllers.
-5. Implement regular updates, scanning and patching to address vulnerabilities promptly.
-6. Disable SMB1 & Link-Local Multicast Name Resolution (LLMNR) via GPO.
-7. Disable NetBOIS Name Service (NBT-NS) via PowerShell.
-8. Utilise [non-standard port configurations](https://youtu.be/7x_JVszswqc) for Remote Desktop Protocol (RDP) to minimise attack surface.
-9. Physical security measures are also in place to protect servers housing domain controllers.
-10. Finally, in the context of preventing the evolving social engineering attacks and phishing attempts, we conduct security awareness training for users to prevent social engineering attacks and phishing attempts.
+For the full detailed report, please refer to [this link](<insert link>).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
