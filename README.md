@@ -20,7 +20,7 @@
     <!-- <li><a href="#progress">Progress</a></li> -->
     <li><a href="#networking--it-infrastructure">Networking & IT Infrastructure</a></li>
     <!-- continue from here for TOC -->
-    <li><a href="#windows--linux-server-administration">Windows & Linux Server Administration</a></li>
+    <li><a href="#windows-server-administration">Windows Server Administration</a></li>
     <li><a href="#secure-cloud-environment">Secure Cloud Environment</a></li>
     <li><a href="#cybersecurity-fundamentals">Cybersecurity Fundamentals</a></li>
     <li><a href="#ethical-hacking-&-pentesting">Ethical Hacking & Pentesting</a></li>
@@ -106,7 +106,7 @@ A scalable Wireless LAN Controller (WLC) manages the WLAN infrastructure, allowi
 
 <!-- CONT FROM HERE -->
 
-## Windows & Linux Server Administration
+## Windows Server Administration
 
 ### Microsoft Active Directory
 
