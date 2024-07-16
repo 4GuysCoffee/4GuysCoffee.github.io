@@ -91,8 +91,8 @@ These are comprehensive steps that should be taken to ensure the AD DS is up and
     ```sh
     netdom query fsmo
     ```
-    ![Delegating Operations Masters](HTDOCS/img/dc-assignment.png)
-    ![Figure showing the newly added DC](HTDOCS/img/dc-assignment2.png)
+    ![Delegating Operations Masters](../HTDOCS/img/dc-assignment.png)
+    ![Figure showing the newly added DC](../HTDOCS/img/dc-assignment2.png)
 
 
 #### Adding a PC to the Server
