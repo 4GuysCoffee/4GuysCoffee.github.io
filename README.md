@@ -83,9 +83,8 @@ In addition to its physical presence, 4GuysCoffee has ventured into the digital 
 
 ### Overview
 
-This section provides a detailed analysis of the network infrastructure implemented at 4GuysCoffee. The analysis highlights the key features of the network design, emphasising its focus on scalability, reliability, and cost-effectiveness. We explore the hierarchical structure employed at the headquarters and the rationale behind the simpler design used in branch locations. The report delves into the specific technologies and protocols utilised within the network, including VLANs, OSPF routing, and security measures like HSRP and RADIUS server authentication. Finally, the report examines the configuration of the Wireless LAN Controller (WLC) and its role in managing the network's access points.
+This section provides an overview of the network infrastructure implemented at 4GuysCoffee. The full report, that can be found [here](readme-docs/Networking%20%26%20IT%20Infrastructure.pdf), highlights the key features of the network design, emphasising its focus on scalability, reliability, and cost-effectiveness. We explore the hierarchical structure employed at the headquarters and the rationale behind the simpler design used in branch locations. The report delves into the specific technologies and protocols utilised within the network, including VLANs, OSPF routing, and security measures like HSRP and RADIUS server authentication. Finally, the report examines the configuration of the Wireless LAN Controller (WLC) and its role in managing the network's access points.
 
-Full report [here](readme-docs/Networking%20%26%20IT%20Infrastructure.pdf).
 
 #### Network Design & Architecture
 
@@ -102,9 +101,6 @@ To accommodate future growth, subnet selection adheres to Cisco's addressing gui
 
 A scalable Wireless LAN Controller (WLC) manages the WLAN infrastructure, allowing for seamless expansion as needed. The WLC provides an additional layer of security by offering centralised AP deployment, rogue device detection, and network protection through a firewall. Furthermore, a RADIUS server necessitates login credentials for staff users accessing the office Wi-Fi network, adding another layer of access control.
 
-#### Summary
-
-The analysis reveals that 4GuysCoffee's network infrastructure prioritises scalability, reliability, and cost-effectiveness. The network design incorporates industry best practices and utilises robust technologies and protocols to ensure secure and efficient network operation. The hierarchical structure, coupled with the implementation of VLANs, subnets, and various security measures, safeguards the network against potential vulnerabilities. The WLC plays a crucial role in managing access points and enhancing wireless network security. Overall, the network infrastructure appears well-designed to support the current and future needs of 4GuysCoffee.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
