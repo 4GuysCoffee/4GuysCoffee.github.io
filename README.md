@@ -104,8 +104,6 @@ A scalable Wireless LAN Controller (WLC) manages the WLAN infrastructure, allowi
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONT FROM HERE -->
-
 ## Windows Server Administration
 
 ### Microsoft Active Directory
@@ -145,7 +143,9 @@ The benefits of hardening a Linux server are multifaceted. Enhanced security mea
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ROADMAP -->
+<!-- CONT FROM HERE -->
+
+
 ## Cybersecurity
 
 This section contains excerpts from our Annual Cybersecurity Report. To view the detailed report, click [here](HTDOCS/doc/cs-report.pdf).
